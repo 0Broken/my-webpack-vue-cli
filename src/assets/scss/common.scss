@@ -1,0 +1,22 @@
+// 封装scss中的mixin
+// 省略单行文本
+@mixin ellipsis-line-1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+//居中
+@mixin f-c-c {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.ellipsis-line-1 {
+    @include ellipsis-line-1;
+}
+
+.f-c-c {
+    @include f-c-c
+}
